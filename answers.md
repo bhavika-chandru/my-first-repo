@@ -3,7 +3,7 @@
 **1. Edit readme.txt and add a new line of text**
 
 Command used:
-echo "This is a new line" >> readme.txt
+echo "I add a nre new line because why not" >> readme.txt
 
 **2. What does git status show now?**
 
@@ -16,7 +16,8 @@ git commit -m "Update readme with a new line of text"
 
 **4. How many commits do you have now?**
 
-(Write the number after running git log --oneline)
+git log --oneline
+
 
 ## Part 3: Your First Commit
 
