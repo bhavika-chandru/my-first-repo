@@ -1,3 +1,13 @@
+## Part 5: Exploration
+
+### 1. What does `git diff` do?
+`git diff` shows the **differences between your working directory and the last commit or staged version**.  
+It highlights what has changed line-by-line but has **not been committed** yet.
+
+### 2. What does `git log --oneline` do?
+`git log --oneline` shows a **short, condensed history of your commits**, where each commit appears on a single line.  
+It makes it easy to see commit IDs and messages at a glance.
+
 ## Part 4: Make Changes
 
 **1. Edit readme.txt and add a new line of text**
