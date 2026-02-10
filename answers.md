@@ -83,3 +83,62 @@ It highlights what changed line-by-line before committing.
 `git branch`  
 (The current branch has a `*` next to it.)
 
+## Part 8: Merge Branches
+
+### 1. Switch back to the main branch
+`git switch main`
+
+### 2. List the files in your directory. Is install.sh present? Why or why not?
+**Command:**
+`ls`
+
+**Answer:**  
+Before merging, `install.sh` is **not present** on `main` because it was created on the `feature-script` branch, and branches keep changes separate until you merge them.
+
+### 3. What command merges feature-script into main?
+`git merge feature-script`
+
+### 4. List the files again. What changed?
+**Command:**
+`ls`
+
+**Answer:**  
+After merging, `install.sh` **appears** in the `main` branch because the changes from `feature-script` were merged into `main`.
+
+### 5. Check your commit history. What do you observe?
+**Command:**
+`git log --oneline --graph --decorate`
+
+**Answer:**  
+The commits from `feature-script` now show up in the history of `main`. You may also see a merge commit depending on how the merge was performed.
+
+### 6. What command deletes the feature-script branch after merging?
+`git branch -d feature-script`
+
+## Part 9: Push to GitHub
+
+### 1. What command links your local repo to GitHub?
+`git remote add origin https://github.com/YOUR-USERNAME/my-first-repo.git`
+
+### 2. What command pushes your commits to GitHub?
+`git push -u origin main`
+
+### 3. Refresh your GitHub page. What do you see?
+I see all my project files (such as `readme.txt`, `install.sh`, and `answers.md`) uploaded to the repository, along with the commit history from my local machine.
+
+## Part 10: Delete and Clone
+
+### 1. Navigate out of your project folder
+`cd ..`
+
+### 2. What command deletes the local repository folder?
+`rm -rf my-first-repo`
+
+### 3. What command clones your repository from GitHub?
+`git clone https://github.com/bhavika-chandru/my-first-repo.git`
+
+### 4. Navigate into the cloned folder and verify your files are there
+`cd my-first-repo`  
+`ls`  
+
+I can see all the files that were pushed to GitHub, such as `readme.txt`, `install.sh`, and `answers.md`.
