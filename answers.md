@@ -142,3 +142,33 @@ I see all my project files (such as `readme.txt`, `install.sh`, and `answers.md`
 `ls`  
 
 I can see all the files that were pushed to GitHub, such as `readme.txt`, `install.sh`, and `answers.md`.
+
+## Part 11: Full Workflow Practice
+
+For this part, I completed all the required steps inside my existing repository, using new branches to keep the work organized.
+
+### 1. Create a new folder called bash-installer
+I created a new directory inside my repo:
+`mkdir bash-installer`
+`cd bash-installer`
+
+### 2. Initialize Git  
+Since this folder is already inside a Git repository, I did **not** run `git init` again.  
+(Git does not allow nested repositories.)
+
+### 3. Create a README.md on the main branch explaining what the project is
+I created the README file:
+`echo "# Bash Installer Project" > README.md`
+`echo "This project contains an installation script." >> README.md`
+
+### 4. Commit the README
+`git add README.md`
+`git commit -m "Add README for bash-installer project"`
+
+### 5. Create a branch called feature-install
+`git switch -c feature-install`
+
+### 6. Add the previous installation script into this repo
+I created `install.sh` with the required content:
+
+
