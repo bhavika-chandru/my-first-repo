@@ -171,4 +171,28 @@ I created the README file:
 ### 6. Add the previous installation script into this repo
 I created `install.sh` with the required content:
 
+## Reflection Questions
+
+### 1. Why is version control useful?
+Version control is useful because it tracks changes over time, allows you to revert mistakes, collaborate safely with others, and keep a complete history of how a project evolves.
+
+### 2. What is the difference between staging and committing?
+Staging means selecting specific changes you want to include in the next commit.  
+Committing saves those staged changes into the repository history as a snapshot with a message.
+
+### 3. When should you make a commit?
+You should commit whenever you complete a small, meaningful unit of work—such as adding a feature, fixing a bug, or making progress you may want to revisit later.
+
+### 4. What is the difference between `git init` and `git clone`?
+`git init` creates a brand-new empty Git repository in the current folder.  
+`git clone` copies an existing remote repository (with all its files and history) onto your computer.
+
+### 5. Why should you write good commit messages?
+Good commit messages explain what the change is and why it was made. They make the project easier to understand, debug, maintain, and collaborate on.
+
+### 6. What is the purpose of using branches?
+Branches let you work on changes (features, fixes, experiments) without affecting the main code. They isolate work until it's ready to be merged.
+
+### 7. When would you create a new branch instead of working on main?
+You create a new branch when working on a new feature, fixing a bug, doing experimental work, or making changes that shouldn't break the main branch. This keeps `main` stable.
 
